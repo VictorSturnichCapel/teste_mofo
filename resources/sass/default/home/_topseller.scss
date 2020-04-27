@@ -1,0 +1,75 @@
+.topsellers {
+  margin-top: 30px;
+  
+  .ui.basic.button {
+    color: rgba(0, 0, 0, 0.6) !important;
+    font-weight: normal;
+    border-radius: 0.28571429rem;
+    text-transform: none;
+    text-shadow: none !important;
+    width: 40px;
+    height: 40px;
+}
+
+.ui.labeled.icon.buttons > .button > .icon, .ui.labeled.icon.button > .icon {
+  position: absolute;
+  height: 100%;
+  line-height: 1;
+  border-radius: 0px;
+  border-top-left-radius: inherit;
+  border-bottom-left-radius: inherit;
+  text-align: center;
+  margin: 0em;
+  width: 2.57142857em;
+  background-color: rgba(0, 0, 0, 0.05);
+  color: '';
+}
+.slick-slider .slick-prev {
+  top: 40%;
+  left: -3%;
+  opacity: 1;
+  padding: 8px 10px 0px 0px; 
+  background: transparent !important;
+  box-shadow: none;
+  border: 0px;
+  line-height: 2.5em;
+  .icon{
+    color: black !important;
+    font-size: xx-large;
+  }
+  @media screen and (max-width: $mobile-bp) {
+    left:-6%;
+}
+}
+
+.ui.mini.button {
+  font-size: 0.78571429rem;
+}
+.slick-slider .slick-next {
+  background: transparent !important;
+  box-shadow: none;
+  border: 0px;
+  top: 40%;
+  left: 99%;
+  @media screen and (max-width: $mobile-bp) {
+    left:93.2%;
+}
+  opacity: 1;
+  padding: 8px 10px 0px 0px;
+  line-height: 2.5em;
+
+  .icon{
+    color: black !important;
+    font-size: xx-large;
+  }
+}
+.slick-slider .slick-next:hover{
+  border: 0px;
+  box-shadow: none;
+}
+.slick-slider .slick-prev:hover{
+  border: 0px;
+  box-shadow: none;
+}
+
+  }

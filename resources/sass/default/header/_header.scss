@@ -1,0 +1,150 @@
+$p-icon-search-mobile: 10px;
+
+topbar,
+headlogo {
+  width: 100%;
+}
+
+._header {
+  background: rgb(255,255,255);
+  margin-top: 0px;
+
+  @media screen and (max-width: $mobile-bp) {
+    background: #FF5556;
+  }
+
+  &.fixed {
+    box-shadow: rgba(0,0,0,.3) 0px 0px 10px 0px;
+
+    @media screen and (max-width: $mobile-bp) {
+      box-shadow: none;
+      border-bottom: 1px solid #eee;
+    }
+
+    .blocoBusca {
+      top: 90px;
+    }
+  }
+
+  .ui.container {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+  }
+
+  i.circular.icon {
+    box-shadow: none;
+  }
+
+  .ui.floating.label {
+    top: 0.8em;
+    left: 105%;
+  }
+
+  .searchcolumn {
+    .ui.icon.input > i.icon {
+      opacity: initial;
+    }
+
+    @media screen and (max-width: $mobile-bp) {
+      display: none !important;
+    }
+  }
+
+  .searchMobile {
+    display: inline-block;
+
+    @media screen and (min-width: 375px) {
+      float: right;
+    }
+
+    > .button {
+      background: transparent;
+      margin: 0;
+      padding-top: 17px;
+      color: #fff;
+    }
+
+    .blocoBusca {
+      display: none;
+      background: #fff;
+      border-radius: .5em;
+      border: 1px solid #DDD;
+
+      &.active {
+        display: block !important;
+        position: fixed;
+        right: 10px;
+        top: 110px;
+        z-index: 10;
+        width: calc(100% - 20px);
+        height: 40px;
+      }
+
+      &Container {
+        display: flex !important;
+        align-items: center;
+
+        .prompt {
+          border: 0px !important;
+          max-width: calc(100% - 80px);
+        }
+
+        .icon {
+          display: table;
+          padding: #{$p-icon-search-mobile / 2} $p-icon-search-mobile;
+          font-size: 1.5em;
+          margin-right: 0px !important;
+
+          &:last-child {
+            border-left: 1px solid #DDD;
+          }
+
+          &.disabled {
+            color: #999;
+          }
+        }
+      }
+    }
+  }
+
+  .cartbutton {
+    margin: 0;
+    display: inline-block;
+    cursor: pointer;
+    line-height: 0px;
+
+    .ui.basic.button {
+      > span {
+        @media screen and (max-width: $mobile-bp) {
+          display: none;
+        }
+      }
+    }
+    #total_itens_card{
+      position: relative;
+      bottom: 18px;
+      left: -9px;
+      min-width: 18px !important;
+      min-height: 18px !important;
+      padding: 0 !important;
+      padding-left: 2px !important;
+      line-height: 16px !important;
+      font-size: 10px !important;
+      background: #fff !important;
+      border: 1px solid #FF5556;
+      color: #FF5556;
+    }
+  }
+  .iconesh{
+    background: #FF5556;
+    height: 35px;
+    width: 35px;
+    border-radius: 50px;
+  }
+  .iconesh:hover{
+    transform: translateY(-5px);
+  }
+
+}
+
+
